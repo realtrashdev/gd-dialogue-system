@@ -20,6 +20,7 @@ offset_transform_enabled = true
 offset_transform_position = Vector2(3, 3)
 bbcode_enabled = true
 scroll_active = false
+visible_characters_behavior = 1
 
 [node name="BaseText" type="RichTextLabel" parent="." unique_id=114726641]
 layout_mode = 1
@@ -30,5 +31,6 @@ grow_horizontal = 2
 grow_vertical = 2
 bbcode_enabled = true
 scroll_active = false
-visible_characters = 7
+visible_characters = 0
+visible_characters_behavior = 1
 visible_ratio = 0.4375

@@ -3,6 +3,14 @@
 [ext_resource type="PackedScene" uid="uid://ccb5ut431kem2" path="res://testing/basic_dialogue_text_box.tscn" id="1_1xhk1"]
 [ext_resource type="Script" uid="uid://t7nw1pucichu" path="res://testing/dialogue_manager_test.gd" id="1_ujg7v"]
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_0dl8v"]
+bg_color = Color(0.2509804, 0.2509804, 0.2509804, 1)
+border_width_left = 8
+border_width_top = 8
+border_width_right = 8
+border_width_bottom = 8
+border_color = Color(0.1254902, 0.1254902, 0.1254902, 1)
+
 [node name="DialogueManagerTest" type="Control" unique_id=867652277]
 layout_mode = 3
 anchors_preset = 15
@@ -11,6 +19,13 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_ujg7v")
+sample_text = "Hello, this is a test for DialogueManager.
+
+I support [wave][color=blue]BBCode![/color][/wave]
+
+You can change how long pauses are for punctuation... and even add custom pause times if you'd like!
+
+Isn't that cool? I think so."
 
 [node name="PanelContainer" type="PanelContainer" parent="." unique_id=1218433334]
 layout_mode = 1
@@ -25,6 +40,7 @@ offset_right = 678.5
 offset_bottom = 315.0
 grow_horizontal = 2
 grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_0dl8v")
 
 [node name="MarginContainer" type="MarginContainer" parent="PanelContainer" unique_id=2034477943]
 layout_mode = 2

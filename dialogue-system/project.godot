@@ -14,6 +14,10 @@ config/name="dialogue-system"
 config/features=PackedStringArray("4.7", "Forward Plus")
 config/icon="res://icon.svg"
 
+[autoload]
+
+DialogueManager="*uid://bsydsx1noanwh"
+
 [display]
 
 window/size/viewport_width=1920

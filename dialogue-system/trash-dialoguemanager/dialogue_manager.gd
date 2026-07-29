@@ -3,7 +3,7 @@
 ## To use square brackets, place ~ characters in the spaces before them. The ~ characters will be deleted.
 
 @tool
-class_name DialogueManager extends Node
+extends Node
 
 @export_group("Timing")
 ## Base wait time between character prints.
