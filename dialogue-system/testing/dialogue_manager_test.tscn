@@ -1,0 +1,37 @@
+[gd_scene format=3 uid="uid://b6eqx3a25tmf0"]
+
+[ext_resource type="PackedScene" uid="uid://ccb5ut431kem2" path="res://testing/basic_dialogue_text_box.tscn" id="1_1xhk1"]
+[ext_resource type="Script" uid="uid://t7nw1pucichu" path="res://testing/dialogue_manager_test.gd" id="1_ujg7v"]
+
+[node name="DialogueManagerTest" type="Control" unique_id=867652277]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_ujg7v")
+
+[node name="PanelContainer" type="PanelContainer" parent="." unique_id=1218433334]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -678.5
+offset_top = -280.0
+offset_right = 678.5
+offset_bottom = 315.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="PanelContainer" unique_id=2034477943]
+layout_mode = 2
+theme_override_constants/margin_left = 16
+theme_override_constants/margin_top = 16
+theme_override_constants/margin_right = 16
+theme_override_constants/margin_bottom = 16
+
+[node name="BasicDialogueTextBox" parent="PanelContainer/MarginContainer" unique_id=790193658 instance=ExtResource("1_1xhk1")]
+layout_mode = 2

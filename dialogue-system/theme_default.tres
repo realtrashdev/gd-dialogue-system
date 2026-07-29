@@ -1,0 +1,11 @@
+[gd_resource type="Theme" format=3 uid="uid://c6j1c4x0kjruk"]
+
+[ext_resource type="FontFile" uid="uid://dmo0nh6helufv" path="res://Boiled Pasta.ttf" id="1_7s2d2"]
+
+[resource]
+default_font = ExtResource("1_7s2d2")
+default_font_size = 48
+RichTextLabel/fonts/bold_font = ExtResource("1_7s2d2")
+RichTextLabel/fonts/bold_italics_font = ExtResource("1_7s2d2")
+RichTextLabel/fonts/italics_font = ExtResource("1_7s2d2")
+RichTextLabel/fonts/normal_font = ExtResource("1_7s2d2")
